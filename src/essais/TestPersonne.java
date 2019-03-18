@@ -27,9 +27,23 @@ public class TestPersonne
 		b.adresse.ville = "Godric's Hollow";
 		*/
 
-		Peronne a = new Peronne("Lycoris", "Sicarii");
+		Peronne a = new Peronne("Sicarii", "Lycoris");
 		AdressePostale ou = new AdressePostale(24, "rue du Lion", 45210, "Godric's Hollow");
-		Peronne b = new Peronne("Nerine", "Peverell", ou);
+		Peronne b = new Peronne("Peverell", "Nerine", ou);
+		
+		a.affichage();
+		
+		b.setNom("Potter");
+		b.setPrenom("Lily");
+		AdressePostale nvA = new AdressePostale(4, "privet Drive", 45382, "Surrey");
+		b.setAdresse(nvA);
+		b.affichage();
+		
+		Peronne c = new Peronne("Corozon", "Willhemina");
+		AdressePostale ad = new AdressePostale(25, "Rue des Tzars", 46852, "Moscou");
+		c.setAdresse(ad);
+		
+		
 	}
 
 }

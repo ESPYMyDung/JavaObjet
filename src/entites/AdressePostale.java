@@ -10,7 +10,6 @@ public class AdressePostale
 	//constructeur
 	public AdressePostale(){}
 	
-	
 	public AdressePostale(int num, String rue, int codPos, String vil)
 	{
 		numero = num;

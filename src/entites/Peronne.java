@@ -20,4 +20,43 @@ public class Peronne
 		this(nom, prenom);
 		this.adresse = adresse;
 	}
+	
+	//methode
+	public void affichage()
+	{
+		String sortie = this.nom.toUpperCase() + " " +  this.prenom;
+		System.out.println(sortie);
+	}
+	
+	public void setNom(String nvNom)
+	{
+		this.nom = nvNom;
+	}
+	
+	public void setPrenom(String nvPrenom)
+	{
+		this.prenom = nvPrenom;
+	}
+	
+	public void setAdresse(AdressePostale nvAdresse)
+	{
+		this.adresse = nvAdresse;
+	}
+	
+	public String getNom()
+	{
+		return this.nom;
+	}
+	
+	public String getPrenom()
+	{
+		return this.prenom;
+	}
+	
+	public AdressePostale getAdresse(String nvNom)
+	{
+		return this.adresse;
+	}
+	
+	
 }

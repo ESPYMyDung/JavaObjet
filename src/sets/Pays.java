@@ -22,10 +22,10 @@ public class Pays
 		return this.nbHab*this.pibHab;
 	}
 	
-	public void affiche()
+	public String toString() //a privileger au affiche...
 	{
 		String sortie = this.getNom() + ", " + this.getNbr() + " hab, PIB : " + this.calcPIB();
-		System.out.println(sortie);
+		return sortie;
 	}
 	
 	

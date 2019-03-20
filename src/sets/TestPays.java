@@ -60,7 +60,7 @@ public abstract class TestPays
 		
 		for (Pays pays:vector)
 		{
-			pays.affiche();
+			System.out.println(pays);
 		}
 		
 		//supprimer le pays au PIb total le plus petit
@@ -71,7 +71,7 @@ public abstract class TestPays
 		//afficher les pays avec les nom, nbr hab et PIB total
 		for (Pays pays:vector)
 		{
-			pays.affiche();
+			System.out.println(pays);
 		}
 		
 
